@@ -82,6 +82,13 @@ This project involves creating a basic home Security Operations Center (SOC) in 
   - Used Kusto Query Language (KQL) to filter failed login attempts.<br>  
   - Uploaded a watch list spreadsheet mapping IP ranges to geographic locations.<br>  
   - Created a Sentinel workbook to visualize attacker locations on a dynamic map.
+ 
+
+  <p align="center">
+Creating a Virtual Network: <br/>
+<img src="https://imgur.com/a/oyoDJ45" height="80%" width="80%" alt="Virtual Network"/>
+<br />
+<br />
 
 
 
