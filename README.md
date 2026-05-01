@@ -86,7 +86,7 @@ This project involves creating a basic home Security Operations Center (SOC) in 
 
   <p align="center">
 Creating a Virtual Network: <br/>
-<img src="https://imgur.com/a/oyoDJ45" height="80%" width="80%" alt="Virtual Network"/>
+<img src="https://imgur.com/a/hYKtbNM" height="80%" width="80%" alt="Virtual Network"/>
 <br />
 <br />
 
