@@ -1,23 +1,48 @@
 
-#<h1>Basic Home SOC Lab in Azur</h1>
+#<h1>Basic Home SOC Lab in Azure</h1>
 
 <h2>Description</h2>
 This project involves creating a basic home Security Operations Center (SOC) in the cloud, using a free Azure subscription. The goal is to deploy a honeypot virtual machine intentionally exposed to the public internet to observe real-time cyber-attacks. By forwarding security logs from the honeypot to a centralized repository and integrating with a Security Information and Event Management (SIEM) system, the project demonstrates how attackers interact with exposed systems and how security teams can monitor and analyze these threats using KQL.
 <br />
 
 
-<h2> Tools Used</h2>
 
-- <b>Suricata</b> 
-- <b>Virus Total</b>
-- <b>Hydra</b>
-- <b>NMAP</b>
+<h2>Tools and Technologies Used</h2>
 
-<h2>Environments Used </h2>
+<b>Microsoft Azure Cloud Platform:</b>  
+<b>Used to create and manage the virtual infrastructure including the virtual machine, virtual network, and security groups.</b>
 
-- <b>Wazuh OVA</b>
-- <b>Ubuntu</b>
-- <b>Kali Linux</b>
+<b>Azure Free Subscription:</b>  
+<b>Used for cost-effective access to cloud services with free credits.</b>
+
+<b>Virtual Machine (Windows 10 Image):</b>  
+<b>Acts as the honeypot, deliberately opened to public internet traffic to attract real attacks.</b>
+
+<b>Virtual Network and Subnet:</b>  
+<b>Provides network segmentation and connectivity within Azure, similar to a home router but in the cloud.</b>
+
+<b>Network Security Group (NSG):</b>  
+<b>Functions as a cloud firewall controlling inbound and outbound traffic, configured to allow all inbound traffic to expose the VM.</b>
+
+<b>Windows Firewall (inside VM):</b>  
+<b>Disabled to increase the VM’s vulnerability and attract more attacks from the internet.</b>
+
+<b>Azure Log Analytics Workspace:</b>  
+<b>A centralized log repository where security logs from the VM are forwarded for aggregation and analysis.</b>
+
+<b>Azure Sentinel:</b>  
+<b>Microsoft’s cloud-native Security Information and Event Management (SIEM) system used to aggregate, analyze, and visualize security events collected from Azure resources.</b>
+
+<b>Azure Monitor Agent:</b>  
+<b>Installed as an extension on the VM, responsible for forwarding security event logs to the Log Analytics workspace.</b>
+
+<b>Kusto Query Language (KQL):</b>  
+<b>The query language used to filter, analyze, and visualize event logs inside Log Analytics and Sentinel.</b>
+
+<b>Watch List in Sentinel:</b>  
+<b>A large spreadsheet containing IP-to-geolocation mappings uploaded into Sentinel to enrich logs with geographic information about attacker IP addresses.</b>
+
+
 
 <h2>Project Activities performed & Images of its walk-through:</h2>
 
